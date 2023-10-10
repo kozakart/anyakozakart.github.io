@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Redirect</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var instagramUsername = "anyakozakart";  // Instagram username
+    var fallbackUrl = "https://www.instagram.com/anyakozakart/";  // Fallback URL
+
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
+    function attemptOpenInstagram() {
+        var now = new Date().valueOf();
+        setTimeout(function () {
+            if (new Date().valueOf() - now > 100) return;
+            window.location = fallbackUrl;
+        }, 25);
+        window.location = "instagram://user?username=" + instagramUsername;
+    };
+
+    if(isMobileDevice()) {
+        attemptOpenInstagram();
+    } else {
+        window.location = fallbackUrl;
+    }
+</script>
+
+</body>
+</html>
+
