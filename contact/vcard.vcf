@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:4.0
+REV:20231011T192242Z
+SOURCE:http://anya.kozak.art/contact/vcard.vcf
+FN:Anya KOZAK
+N:KOZAK;Anya;;;
+TEL:+33749465837
+ANNIVERSARY:19860607
+GENDER:F
+PHOTO:PHOTO;MEDIATYPE=image/jpeg:http://anya.kozak.art/contact/anya.jpg
+ORG:KozaK Art;;
+EMAIL:anya@kozak.art
+URL:http://anya.kozak.art
+CATEGORIES:Painter
+END:VCARD
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #999999;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        .contact-card {
+            background-color: #fff;
+            padding: 20px 20px 50px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .profile-picture {
+            border-radius: 50%; /* Make the photo circular */
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px; /* Space between photo and name */
+        }
+        table {
+            width: 100%;
+            margin-bottom: 30px; /* space between table and button */
+        }
+        th {
+            text-align: right;
+            padding-right: 10px; /* space between keys and values */
+        }
+        td {
+            text-align: left;
+        }
+        a {
+            color: #008CBA;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .download-button {
+            background-color: #008CBA;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-card">
+    <img src="anya.jpg" alt="Profile Picture" class="profile-picture">
+    <h2>Anya KOZAK</h2>
+    <table>
+        <tr>
+            <th>Phone :</th>
+            <td><a href="tel:+33749465837">07.49.46.58.37</a></td>
+        </tr>
+        <tr>
+            <th>Email :</th>
+            <td><a href="mailto:anya@kozak.art">anya@kozak.art</td>
+        </tr>
+        <tr>
+            <th>Website :</th>
+            <td><a href="http://anya.kozak.art" target="_blank">anya.kozak.art</a></td>
+        </tr>
+    </table>
+    <a href="vcard.vcf" class="download-button">➕ Add contact</a>
+</div>
+
+</body>
+</html>
+
